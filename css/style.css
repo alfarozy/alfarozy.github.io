@@ -263,15 +263,14 @@ textarea.ji-form-control:focus {
 }
 footer {
   padding: 0rem 0 2rem 0;
-  background: var(--light);
   margin-top: 0rem;
-  color: var(--dark);
+  color: var(--light);
   /* background: linear-gradient(to left, var(--dark), #40404e); */
   background: #2a7fff;
 }
 
 footer .text-copyright a {
-  color: var(--dark);
+  color: var(--light);
   text-decoration: none;
   font-weight: 600;
 }
