@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("/css/_global.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-color: rgb(85, 84, 84);
+  --gradient-color: linear-gradient(90deg, #2a7fff 0%, #4458dc 100%);
+  --box-shadow: 2px 8px 8px rgb(67, 56, 61, 0.205);
+  --primary: #065bda;
+  --dark: #000038;
+  --light: #f9fafb;
+
+  /* font-family */
+  --roboto: "Roboto", cursive;
+}
+.header .main-menu img {
+  width: 50px;
+  max-width: 100%;
+}
+.header .main-menu .navbar .navbar-brand {
+  padding: 0 2rem 0 1.5rem;
+}
+.header .main-menu .navbar {
+  padding: 2rem 5rem;
+}
+
+.header .main-menu .navbar-nav .nav-item {
+  font-family: var(--roboto);
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0 0.6rem;
+  color: var(--dark);
+}
+.banner {
+  height: 100vh;
+}
+.header .main-menu .navbar-nav a.active {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header .main-menu .navbar-nav a:hover {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* end header */
+.title-text {
+  font: normal 50px/50px var(--roboto);
+}
+.banner .banner-title h3 {
+  padding-top: 25%;
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+.banner .banner-title h3::after {
+  content: "";
+  height: 2px;
+  width: 18vw;
+  background: var(--text-color);
+  display: inline-block;
+  margin-left: 5%;
+  transform: translateY(-10px);
+}
+
+.banner .banner-title h1 {
+  font-size: 2.8rem;
+  font-weight: normal;
+}
+.banner .banner-title h4 {
+  font-size: 1.125rem;
+  font: 500;
+  color: var(--text-color);
+}
+
+.banner .banner-image > img {
+  padding: 3rem 0;
+  margin-left: 5rem;
+  width: 420px;
+  height: 100%;
+}
+.banner .skill {
+  background: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  margin: 8px;
+  border: 2px solid var(--light);
+  cursor: pointer;
+  transition: 0.8 ease;
+}
+.banner .skill:hover {
+  border: 2px solid var(--primary);
+}
+.banner .skill:first-child {
+  margin-left: -6px;
+}
+.banner .skill > img {
+  display: block;
+  width: 35px;
+  margin: auto;
+  margin-top: 8px;
+}
+.ji-small-icon-1 {
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  opacity: 0.7;
+  transition: 0.8s ease;
+}
+.ji-small-icon-2 {
+  position: absolute;
+  left: 45%;
+  top: 60%;
+  opacity: 0.7;
+  transform: rotate(60deg);
+  transition: 0.8s ease;
+}
+.ji-small-icon-3 {
+  position: absolute;
+  right: 15%;
+  top: 85%;
+  opacity: 0.7;
+  transform: rotate(20deg);
+  transition: 0.8s ease;
+}
+.ji-small-icon-2 .ji-small-icon-3 {
+  transition: 2s;
+  transform: rotate(360deg);
+}
+/* end banner */
+.about {
+  padding: 4rem 5rem 0 5rem;
+}
+.about .about-image > img {
+  width: 450px;
+}
+
+.list-sosial .sosial a {
+  color: var(--text-color);
+}
+.list-sosial .sosial a:hover {
+  color: var(--primary);
+}
+/* emd about */
+
+.skills .skill-list {
+  padding-top: 1rem;
+}
+.skills .skill {
+  background: var(--primary-hover);
+  padding: 2rem 0.3rem;
+  border-radius: 20px;
+  border: solid 3px var(--light);
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.skills .skill:hover {
+  /* border: solid 3px var(--primary); */
+  transition: 0.4s ease;
+  box-shadow: var(--box-shadow);
+}
+
+.skills .skill-image {
+  position: relative;
+  z-index: 9;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 50%;
+  border-bottom: solid 3px #fff;
+  border-left: solid 3px #fff;
+  border-right: solid 3px #fff;
+}
+.skills .skill-image > img {
+  width: 60px;
+  height: 60;
+  display: block;
+  margin: auto;
+  margin-top: 2px;
+}
+.skill h2 {
+  padding: 0 14rem;
+}
+.skills .skill p {
+  color: var(--text-color);
+  font-size: 14px;
+  margin-top: -5px;
+}
+
+/* end skill */
+
+.ji-project img {
+  width: 340px;
+  height: 225px;
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+}
+.ji-project .title a {
+  text-decoration: none;
+  color: #29292b;
+}
+.categories {
+  margin-bottom: 2rem;
+}
+.project-title h2 {
+  margin-top: 4rem;
+}
+.btn-category {
+  background: var(--light);
+}
+.btn-category.active {
+  background: var(--light);
+  background-clip: padding-box;
+  color: var(--primary);
+  box-shadow: var(--box-shadow);
+}
+.btn-category {
+  background: var(--light);
+}
+.btn-category:hover {
+  background: var(--light);
+  background-clip: padding-box;
+  color: var(--primary);
+}
+
+/* end project */
+input.ji-form-control,
+textarea.ji-form-control {
+  padding: 0.6rem 1rem;
+  border: none;
+  background: var(--light);
+  color: var(--dark);
+  outline: none;
+  width: 100%;
+  color: var(--text-color);
+  border-radius: 8px;
+}
+input.ji-form-control:focus,
+textarea.ji-form-control:focus {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  color: var(--dark);
+}
+.contact {
+  margin-bottom: -100px;
+}
+/* end contact */
+.footer {
+  position: relative;
+  z-index: -2;
+}
+footer {
+  padding: 0rem 0 2rem 0;
+  background: var(--light);
+  margin-top: 0rem;
+  color: var(--light);
+  /* background: linear-gradient(to left, var(--dark), #40404e); */
+  background: #2a7fff;
+}
+
+footer .text-copyright a {
+  color: var(--light);
+  text-decoration: none;
+  font-weight: 600;
+}
+footer img {
+  width: 70px;
+}
+
+/* detail project */
+
+.detail-project .project-image img {
+  max-width: 100%;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+.detail-project .project-title {
+  margin: 1rem 0;
+  font-size: 24px;
+}
+.project-information h1 {
+  font-size: 22px;
+  color: var(--text-color);
+}
+.project-information p {
+  line-height: 15px;
+}
+.project-information ul li {
+  list-style: none;
+}
+article h1 {
+  font-size: 20px;
+}
+article h2 {
+  font-size: 18px;
+}
+article h3 {
+  font-size: 16px;
+}
+article h4 {
+  font-size: 14px;
+}
+.project-information {
+  position: relative;
+  z-index: 3;
+  height: auto;
+  max-height: 350px;
+  margin-top: -255px;
+  background: #fff;
+}
+.project-tech {
+  margin: 2rem 0;
+  background: #fff;
+}
+.project-tech img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 2rem;
+}
+.project-tech h1 {
+  font-size: 22px;
+  color: var(--text-color);
+}
