@@ -35,7 +35,7 @@
   color: var(--dark);
 }
 .banner {
-  height: 100vh;
+  height: 90vh;
 }
 .header .main-menu .navbar-nav a.active {
   background: var(--gradient-color);
@@ -70,7 +70,7 @@
   font-size: 2.8rem;
   font-weight: normal;
 }
-.banner .banner-title h4 {
+.banner .banner-title h2 {
   font-size: 1.125rem;
   font: 500;
   color: var(--text-color);
@@ -146,7 +146,9 @@
   color: var(--primary);
 }
 /* emd about */
-
+.skills .skill h3 {
+  font-size: 22px;
+}
 .skills .skill-list {
   padding-top: 1rem;
 }
@@ -207,6 +209,9 @@
   text-decoration: none;
   color: #29292b;
 }
+.ji-project .title h3 {
+  font-size: 21px;
+}
 .categories {
   margin-bottom: 2rem;
 }
@@ -260,13 +265,13 @@ footer {
   padding: 0rem 0 2rem 0;
   background: var(--light);
   margin-top: 0rem;
-  color: var(--light);
+  color: var(--dark);
   /* background: linear-gradient(to left, var(--dark), #40404e); */
   background: #2a7fff;
 }
 
 footer .text-copyright a {
-  color: var(--light);
+  color: var(--dark);
   text-decoration: none;
   font-weight: 600;
 }
