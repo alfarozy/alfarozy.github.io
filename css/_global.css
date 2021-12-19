@@ -52,8 +52,7 @@
   background: #ffffff;
   box-shadow: var(--box-shadow);
   z-index: 999;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   -webkit-animation: slideDown 0.5s ease;
   animation: slideDown 0.5s ease;
