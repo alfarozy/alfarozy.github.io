@@ -54,8 +54,9 @@
   z-index: 999;
   position: fixed;
   top: 0;
-  -webkit-animation: slideDown 0.5s ease;
-  animation: slideDown 0.5s ease;
+  -webkit-animation: slideDown 0.8s ease;
+  animation: slideDown 0.8s ease;
+  transition: 0.8s;
 }
 .ji-navbar_fixed .navbar {
   padding: 1rem 5rem !important;

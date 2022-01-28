@@ -63,6 +63,13 @@
   .about {
     padding: 0.8rem;
   }
+  .ji-btn {
+    padding: 0.5rem 0.8rem;
+    font: normal 500 16px/20px var(--roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+  }
 }
 
 @media only screen and (max-width: 720px) {

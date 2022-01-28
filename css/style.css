@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --text-color: rgb(85, 84, 84);
   --gradient-color: linear-gradient(90deg, #2a7fff 0%, #4458dc 100%);
@@ -41,12 +42,17 @@
   background: var(--gradient-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  border-bottom: 2px solid var(--primary);
+  margin-top: -2px;
 }
 .header .main-menu .navbar-nav a:hover {
   background: var(--gradient-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  border-bottom: 2px solid var(--primary);
+  margin-top: -2px;
 }
+/* nav hover */
 /* end header */
 .title-text {
   font: normal 50px/50px var(--roboto);
@@ -133,7 +139,7 @@
 }
 /* end banner */
 .about {
-  padding: 4rem 5rem 0 5rem;
+  padding: 4rem 5rem 7rem 5rem;
 }
 .about .about-image > img {
   width: 450px;
@@ -146,6 +152,10 @@
   color: var(--primary);
 }
 /* emd about */
+.skills {
+  background: var(--gradient-color);
+  padding: 7rem 0;
+}
 .skills .skill h3 {
   font-size: 22px;
 }
@@ -153,12 +163,13 @@
   padding-top: 1rem;
 }
 .skills .skill {
-  background: var(--primary-hover);
+  background: #fff;
   padding: 2rem 0.3rem;
   border-radius: 20px;
   border: solid 3px var(--light);
   margin-top: 25px;
   cursor: pointer;
+
 }
 
 .skills .skill:hover {
@@ -175,9 +186,6 @@
   margin: auto;
   padding: 1rem;
   border-radius: 50%;
-  border-bottom: solid 3px #fff;
-  border-left: solid 3px #fff;
-  border-right: solid 3px #fff;
 }
 .skills .skill-image > img {
   width: 60px;
@@ -196,7 +204,9 @@
 }
 
 /* end skill */
-
+.project {
+  padding: 0.6rem 0 4rem 0;
+}
 .ji-project img {
   width: 340px;
   height: 225px;
@@ -235,7 +245,14 @@
   background-clip: padding-box;
   color: var(--primary);
 }
-
+.project .tag span {
+  font-weight: 400!important;
+  padding: 2px 8px;
+  background: #fff;
+  font-size: 14px !important;
+  margin: 3px;
+  cursor:text;
+}
 /* end project */
 input.ji-form-control,
 textarea.ji-form-control {
@@ -247,14 +264,20 @@ textarea.ji-form-control {
   width: 100%;
   color: var(--text-color);
   border-radius: 8px;
+  border: solid 1.5px #fff;
+
 }
 input.ji-form-control:focus,
 textarea.ji-form-control:focus {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   color: var(--dark);
+  border: solid 1.5px #2a7fff;
+  transition: 0.8s;
+
 }
 .contact {
   margin-bottom: -100px;
+  padding: 7rem 0 1rem 0;
 }
 /* end contact */
 .footer {
@@ -282,7 +305,7 @@ footer img {
 
 .detail-project .project-image img {
   max-width: 100%;
-  width: 100%;
+  width: 99.9%;
   height: 450px;
   object-fit: cover;
   object-position: center;
@@ -335,3 +358,55 @@ article h4 {
   font-size: 22px;
   color: var(--text-color);
 }
+/* blog */
+.posts {
+  background: #2a7fff;
+  padding: 5rem 0;
+}
+.posts .post,.articles .post{
+  margin-top: 20px;
+}
+.posts .post-info{
+  background: #fff;
+  border-radius: 8px;
+  padding: 5px 10px;
+  z-index: 1;
+  margin-bottom: -10px;
+  height: 40px;
+}
+.posts .post-info span{
+  font-size: 14px;
+}
+.articles .post .info span{
+  font-size: 14px;
+}
+.posts .post img{
+  /* border-radius: 8px; */
+  z-index: 2;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 250px;
+}
+.articles .post img{
+  border-radius: 8px;
+  z-index: 2;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 250px;
+}
+.posts .post .card ,.articles .post .card{
+  background: none;
+  border: none;
+}
+.posts .post .card .card-body, .articles .post .card .card-body{
+  background: #fff;
+  /* border-radius: 8px; */
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-top: -50px;
+  z-index: 3;
+
+}
+

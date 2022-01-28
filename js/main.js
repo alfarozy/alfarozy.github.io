@@ -23,7 +23,7 @@ $(document).ready(function () {
     gallery: { enabled: true },
   });
 
-  var header = $(".header").height() + 20;
+  var header = $(".header").height() + 40;
   if ($(".header").length) {
     $(window).scroll(function () {
       let scroll = $(window).scrollTop();
