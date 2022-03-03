@@ -1,3 +1,4 @@
+
 @media only screen and (max-width: 360px) {
   .header .main-menu .navbar .navbar-brand {
     padding: 0 !important;
@@ -49,6 +50,37 @@
   .contact-form textarea {
     width: 100%;
   }
+
+  .img-single-article {
+    object-fit: cover;
+    object-position: center;
+    height: 240px;
+border-radius: 8px;
+
+}
+
+h2 {
+    font-size: 24px
+}
+
+.content h2 {
+    font-size: 22px
+}
+
+.content h3 {
+    font-size: 18px
+}
+
+.media img {
+  width: 50px !important;
+  height: 50px !important;
+}
+.media h4 {
+  font-size: 18px;
+}
+.media-body p {
+  font-size: 16px !important;
+}
 }
 
 @media only screen and (max-width: 610px) {

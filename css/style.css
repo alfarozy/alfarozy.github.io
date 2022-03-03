@@ -366,22 +366,9 @@ article h4 {
 .posts .post,.articles .post{
   margin-top: 20px;
 }
-.posts .post-info{
-  background: #fff;
-  border-radius: 8px;
-  padding: 5px 10px;
-  z-index: 1;
-  margin-bottom: -10px;
-  height: 40px;
-}
-.posts .post-info span{
-  font-size: 14px;
-}
-.articles .post .info span{
-  font-size: 14px;
-}
+
 .posts .post img{
-  /* border-radius: 8px; */
+  border-radius: 20px;
   z-index: 2;
   max-width: 100%;
   object-fit: cover;
@@ -409,4 +396,55 @@ article h4 {
   z-index: 3;
 
 }
+
+/* blog detail */
+
+.detail-blog .blog-title {
+  margin: 1rem 0;
+  font-size: 24px;
+}
+.img-single-article {
+  object-fit: cover;
+  object-position: center;
+  height: 490px;
+  width: 100%;
+  border-radius: 8px;
+
+}
+
+
+code {
+  font-size: 87.5%;
+
+  padding: 2px 9px !important;
+}
+
+pre {
+  color: #e83e8c;
+  word-wrap: break-word;
+  font-size: 90%;
+  color: #2b292a !important;
+  background-color: #eeeeee;
+  border-radius: 4px;
+  padding: 10px
+}
+
+blockquote {
+  background: #eeeeee;
+  border-radius: 10px;
+  border-left: 4px solid blue;
+  border-right: 4px solid blue;
+  padding: 15px;
+}
+
+blockquote::after {
+  content: '{{ $article->user->name }}';
+  position: absolute;
+  right: 60px;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  box-shadow: #abab 0px 3px 8px;
+}
+
 
