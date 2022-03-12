@@ -17,6 +17,9 @@
   /* font-family */
   --roboto: "Roboto", cursive;
 }
+a {
+  text-decoration: none !important;
+}
 .header .main-menu img {
   width: 50px;
   max-width: 100%;
@@ -368,7 +371,7 @@ article h4 {
 }
 
 .posts .post img{
-  border-radius: 20px;
+  border-radius: 8px;
   z-index: 2;
   max-width: 100%;
   object-fit: cover;
