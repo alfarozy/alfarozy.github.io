@@ -4,14 +4,10 @@ My Official portfolio
 
 ## Demo
 
+- https://alfarozy.id (New Update)
 - https://me.alfarozy.id
-- https://alfarozy.github.io
 
-## To do
 
-- [ ] Design Blog.
-- [ ] Develope Backend
-- [ ] SEO
 
 ## library
 
